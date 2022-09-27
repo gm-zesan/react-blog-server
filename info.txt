@@ -1,0 +1,3 @@
+Database::
+	username:zesan_blog
+	password:hlkt4glMr9r728SD
