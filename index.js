@@ -5,6 +5,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const authRoutes = require("./routes/auth.js");
+const userRouter = require("./routes/users.js");
+
 const port = process.env.PORT || 5000;
 const mongoose = require("mongoose");
 
@@ -19,6 +21,7 @@ mongoose
 
 
 app.use("/api/auth", authRoutes);
+app.use("/api/user", userRouter);
 
 
 app.get("/", (req, res) => {
