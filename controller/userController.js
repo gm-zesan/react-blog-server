@@ -1,8 +1,6 @@
 const User = require("../models/User");
 const Post = require("../models/Post");
 const bcrypt = require("bcrypt");
-// const mongoose = require("mongoose");
-// const { ObjectId } = require("mongodb");
 
 // user registration
 exports.saveUser = async (req, res) => {
